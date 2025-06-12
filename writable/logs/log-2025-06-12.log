@@ -1,0 +1,655 @@
+ERROR - 2025-06-12 07:48:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:48:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:50:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:50:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:51:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:51:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:51:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:51:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:51:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:51:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:51:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:51:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:51:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:51:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:52:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:52:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 07:52:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 07:52:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+CRITICAL - 2025-06-12 07:55:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('profil', [], true)
+ 3 APPPATH\Controllers\Profil.php(8): view('profil')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 08:00:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 08:00:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 08:02:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 08:02:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 08:02:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->insert()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->insert()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 08:02:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_mahasiswa` (`nim`, `nama`, `prodi`) VALUES (:nim:, :nama:, :prodi:)', [...], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 08:23:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 08:23:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 08:23:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 08:23:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 12:33:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 12:33:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 12:34:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 12:34:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
+ERROR - 2025-06-12 12:34:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\xamp\htdocs\pretest\app\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+#5 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#6 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\xamp\htdocs\pretest\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\xamp\htdocs\pretest\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\h...')
+#9 {main}
+CRITICAL - 2025-06-12 12:34:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`', [], false)
+ 3 APPPATH\Controllers\Mahasiswa.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Mahasiswa->show()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\xamp\\htdocs\\pretest\\public\\index.php')
